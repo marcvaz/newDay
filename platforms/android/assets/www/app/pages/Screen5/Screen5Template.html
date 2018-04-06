@@ -1,0 +1,37 @@
+<div show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+ng-controller="Screen5" ng-cloak ng-init="init()" class="aio-empty-screen padding overflow-scroll">
+    <div class="card">
+        <div class="item-text-wrap item">
+            focus on just these sub-tasks for the next {{minutesRemaining}} minutes
+        </div>
+        <div class="item timerCard">
+            <div class="list">
+                <div class="item" ng-repeat="subTask in subTasks">
+                    <p>
+                    </p>
+                    {{subTask}}
+                </div>
+            </div>
+            <p>
+                task name: {{taskDescriptionVar}}
+            </p>
+            <p>
+                time remaining: {{minutesRemaining}} m: {{secondsRemaining}} s
+            </p>
+            <div class="item range timerSlider">
+                <i class="icon ion-ios-timer-outline ">
+                </i>
+                <input type="range" name="volume" min="0" max="120" ng-change="timerLengthChange()"
+                ng-model="timerLengthSetting">
+                <i class="icon ion-ios-timer-outline ">
+                </i>
+            </div>
+        </div>
+    </div>
+    <button class="button button-block" ng-click="startTimer()">
+        start
+    </button>
+    <button class="button button-block" ng-click="timerLengthChange()">
+        reset
+    </button>
+</div>

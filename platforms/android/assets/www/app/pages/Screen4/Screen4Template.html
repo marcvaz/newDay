@@ -1,0 +1,42 @@
+<div show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+ng-controller="Screen4" ng-cloak ng-init="init()" class="aio-empty-screen padding overflow-scroll">
+    <div class="card">
+        <div class="item-text-wrap item">
+            discover better thoughts
+        </div>
+    </div>
+    <p>
+        set of negative thoughts:
+    </p>
+    <div class="card">
+        <div class="item" ng-repeat="thought in thoughts">
+            {{thought}}
+        </div>
+    </div>
+    <p>
+        what is an alternative positive thought?
+    </p>
+    <label class="item item-input">
+        <textarea placeholder="Enter a positive alternative to a negative thought from above"
+        ng-model="incomingThought"></textarea>
+    </label>
+    <button class="button button-block" ng-click="addPositiveThought()">
+        add this positive thought
+    </button>
+    <p>
+        set of new positive thoughts:
+    </p>
+    <div class="list">
+        <div class="item" ng-repeat="positiveThought in positiveThoughts">
+            <p>
+            </p>
+            {{positiveThought}}
+        </div>
+    </div>
+    <button class="button button-block" ng-click="openCognitiveDistortions()">
+        see examples of positive alternatives to these thoughts
+    </button>
+    <button class="button progress-button button-block" ng-click="breathe()">
+        next step: breathe!
+    </button>
+</div>

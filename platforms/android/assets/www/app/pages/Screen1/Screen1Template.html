@@ -1,0 +1,22 @@
+<div show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+ng-controller="Screen1" ng-cloak ng-init="init()" class="aio-empty-screen padding overflow-scroll">
+    <div class="card">
+        <div class="item-text-wrap item">
+            what is the task that you want to start?
+        </div>
+    </div>
+    <label class="item item-input">
+        <textarea placeholder="Describe the task in a line here" ng-model="taskDescriptionVar"></textarea>
+    </label>
+    <div class="card">
+        <div class="item-text-wrap item">
+            do you need help getting started?
+        </div>
+    </div>
+    <button class="button progress-button button-block" ng-click="goToPage2()">
+        yes I need a little motivation
+    </button>
+    <button class="button button-block" ng-click="goToPage6()">
+        no I've got this - let's start the task
+    </button>
+</div>

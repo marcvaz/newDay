@@ -1,0 +1,84 @@
+/* orientation */
+.item-divider {
+    white-space: normal;
+    text-align: center;
+}
+.item-default {
+    white-space: pre-wrap;
+}
+.img-default {
+    margin: auto;
+}
+.item-text-wrap-leftaligned {
+    text-align: left;
+}
+
+/* yellow */
+.ng-binding {
+    font-size: 16px;
+    white-space: normal;
+    background-color: #FFFF70 ;
+    border-color: #FE7F2D;
+}
+.item-text-wrap {
+    font-size: 16px;
+    white-space: normal;
+    background-color: #FFFF70;
+    border-color: #FFA060;
+    text-align: center;
+}
+.item-checkbox {
+    font-size: 16px;
+    white-space: normal;
+    background-color: #FFFF70;
+    border-color: #FFA060;
+}
+.timerCard {
+    background-color: #FFFF70;
+    border-color: #FFA060;
+}
+.timerSlider {
+    background-color: #FFFF70;
+    border-color: #FFA060;
+}
+
+
+/* blue */
+.button-block {
+    background-color: #387EF5;
+    color: white;
+    font-size: 16px;
+}
+.progress-button {
+    background-color: #387EF5;
+    color: white;
+    font-size: 16px;
+}
+.new-header-footer {
+    background-color: #FFFAFF;
+}
+
+
+/* orange */
+.aio-empty-screen {
+    background-color: #FFA060;
+}
+.modal-backdrop {
+    background-color: #FFA060;
+}
+.slide-in-up {
+    background-color: #FFA060;
+}
+.overflow-scroll {
+    background-color: #FFA060;
+}
+
+
+
+/* white */
+.item-input {
+    background-color: #FFFAFF;
+}
+.ng-pristine {
+    background-color: #FFFAFF;
+}

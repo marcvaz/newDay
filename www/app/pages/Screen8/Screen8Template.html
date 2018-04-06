@@ -1,0 +1,26 @@
+<div show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+ng-controller="Screen8" ng-cloak ng-init="init()" class="aio-empty-screen padding overflow-scroll">
+    <div class="card">
+        <div class="item-text-wrap item">
+            great job!
+        </div>
+    </div>
+    <div class="card">
+        <div class="item-text-wrap item">
+            when you're ready, start the next work session, and remember &quot;{{currentQuote}}&quot;
+        </div>
+    </div>
+    <p>
+        {{taskDescriptionVar}}
+    </p>
+    <button class="button button-block" ng-click="startSameTask()">
+        start next iteration of this task
+    </button>
+    <div class="item item-input">
+        <input type="text" placeholder="Describe the new task if starting a different task"
+        value="" ng-model="newTask">
+    </div>
+    <button class="button button-block" ng-click="startNewTask()">
+        start a new task
+    </button>
+</div>

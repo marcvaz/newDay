@@ -1,0 +1,28 @@
+<div show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+ng-controller="Screen3" ng-cloak ng-init="init()" class="aio-empty-screen padding overflow-scroll">
+    <div class="card">
+        <div class="item-text-wrap item">
+            what are some of the thoughts that make you feel {{feelingString}} and make you
+            want to not start the task &quot;{{taskDescriptionVar}}&quot; right now?
+        </div>
+    </div>
+    <label class="item item-input">
+        <textarea placeholder="Describe the throught" ng-model="incomingThought"></textarea>
+    </label>
+    <button class="button button-block" ng-click="addThought()">
+        save this thought
+    </button>
+    <div class="list">
+        <div class="item" ng-repeat="thought in thoughts">
+            <p>
+            </p>
+            {{thought}}
+        </div>
+    </div>
+    <button class="button button-block" ng-click="loadCommonThoughts()">
+        see examples of common negative thoughts
+    </button>
+    <button class="button progress-button button-block" ng-click="fightNegativeThoughts()">
+        next step: create alternative positive thoughts
+    </button>
+</div>

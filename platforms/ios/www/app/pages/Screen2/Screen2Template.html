@@ -1,0 +1,26 @@
+<div show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+ng-controller="Screen2" ng-cloak ng-init="init()" class="aio-empty-screen padding overflow-scroll">
+    <div class="card">
+        <div class="item-text-wrap item">
+            how do you feel about your task &quot;{{taskDescriptionVar}}&quot;
+        </div>
+    </div>
+    <ion-checkbox ng-model="anxiousChecked">
+        anxious
+    </ion-checkbox>
+    <ion-checkbox ng-model="angryChecked">
+        angry
+    </ion-checkbox>
+    <ion-checkbox ng-model="sadChecked">
+        sad
+    </ion-checkbox>
+    <ion-checkbox ng-model="guiltyChecked">
+        guilty
+    </ion-checkbox>
+    <ion-checkbox ng-model="disgustedChecked">
+        disgusted
+    </ion-checkbox>
+    <button class="button progress-button button-block" ng-click="button1Click()">
+        next step: understand your thoughts
+    </button>
+</div>

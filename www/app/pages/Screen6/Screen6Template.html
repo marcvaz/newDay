@@ -1,0 +1,17 @@
+<div show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+ng-controller="Screen6" ng-cloak ng-init="init()" class="aio-empty-screen padding overflow-scroll">
+    <div class="card">
+        <div class="item-text-wrap item">
+            focus on your breathing - take deep breaths in sync with this for {{minutesRemaining}}
+            m {{secondsRemaining}} s
+        </div>
+    </div>
+    <img width="" height="" src="files/images/breathe.gif" class="img-default img-responsive"
+    alt="Image error">
+    <button class="button button-block" ng-click="goToNextPage()">
+        skip this: let's move to breaking down this task
+    </button>
+    <button class="button button-block" ng-click="goToNextPage()" ng-disabled="breathingNotDone">
+        next step: break down this task
+    </button>
+</div>

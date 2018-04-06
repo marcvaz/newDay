@@ -1,0 +1,28 @@
+<div show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+ng-controller="Screen7" ng-cloak ng-init="init()" class="aio-empty-screen padding overflow-scroll">
+    <div class="card">
+        <div class="item-text-wrap item">
+            Let's break &quot;{{taskDescriptionVar}}&quot; down into the first 2 or 3 sub-tasks
+            that can together be completed in the next 30 minutes
+        </div>
+    </div>
+    <label class="item item-input">
+        <textarea placeholder="Enter sub-task" ng-model="incomingSubtask"></textarea>
+    </label>
+    <button class="button button-block" ng-click="addSubTask()">
+        add sub-task
+    </button>
+    <p>
+        list of sub-tasks:
+    </p>
+    <div class="list">
+        <div class="item" ng-repeat="subTask in subTasks">
+            <p>
+            </p>
+            {{subTask}}
+        </div>
+    </div>
+    <button class="button button-block" ng-click="startTheTask()">
+        next step: let's start these sub-tasks!
+    </button>
+</div>
